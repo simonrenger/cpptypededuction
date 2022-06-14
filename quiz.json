@@ -1,0 +1,1597 @@
+[
+    {
+        "title": "Example Template",
+        "description": "The quiz will make use of the following templated function:\n```template&lt;typename T&gt;\nvoid functionName(paramType param)``` <em>The <code>paramType</code> decoration will change over the cause of this quiz.</em>",
+        "questions": []
+    },
+    {
+        "title": "#1 Deduce the type for the following function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T& param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int& crx = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(x)",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`T = int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(x)`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`paramType = int&`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = int`"
+                    },
+                    {
+                        "value": "`paramType = int&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T& param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int& crx = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(cx)",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`T = const int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const int&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(cx)`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`paramType = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = const int`"
+                    },
+                    {
+                        "value": "`paramType = const int&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T& param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int& crx = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(crx)",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`T = const int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const int&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(crx)`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`paramType = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = const int`"
+                    },
+                    {
+                        "value": "`paramType = const int&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "#2 Deduce the type for the following function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T&& param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int& crx = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(x)",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`T = int&`"
+                },
+                "options": [
+                    {
+                        "value": "`T = int&`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(x)`",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`paramType  = int&`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType  = int&`"
+                    },
+                    {
+                        "value": "`paramType  = int`"
+                    },
+                    {
+                        "value": "`paramType  = int&&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T&& param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int& crx = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(cx)",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`T = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const int&`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(cx)`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`paramType = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = const int`"
+                    },
+                    {
+                        "value": "`paramType = const int&`"
+                    },
+                    {
+                        "value": "`paramType  = int&`"
+                    },
+                    {
+                        "value": "`paramType  = int`"
+                    },
+                    {
+                        "value": "`paramType = int&&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T&& param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int& crx = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(crx)",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`T = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const int&`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(crx)`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`paramType  = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType  = const int`"
+                    },
+                    {
+                        "value": "`paramType  = const int&`"
+                    },
+                    {
+                        "value": "`paramType  = int&`"
+                    },
+                    {
+                        "value": "`paramType  = int`"
+                    },
+                    {
+                        "value": "`paramType  = int&&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T&& param)```",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(42)",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`T = int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const int&`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(42)`",
+                "type": "radio",
+                "correctAnswerIndex": 4,
+                "correctAnswer": {
+                    "value": "`paramType  = int&&`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType  = const int`"
+                    },
+                    {
+                        "value": "`paramType  = const int&`"
+                    },
+                    {
+                        "value": "`paramType  = int&`"
+                    },
+                    {
+                        "value": "`paramType  = int`"
+                    },
+                    {
+                        "value": "`paramType  = int&&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "#3 Deduce the type for the following function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(const T& param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int& crx = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(x)",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`T = int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const int&`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(x)`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`paramType  = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType  = const int`"
+                    },
+                    {
+                        "value": "`paramType  = const int&`"
+                    },
+                    {
+                        "value": "`paramType  = int&`"
+                    },
+                    {
+                        "value": "`paramType  = int`"
+                    },
+                    {
+                        "value": "`paramType = int&&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(const T& param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int& crx = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(cx)",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`T = int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const int&`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(cx)`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`paramType  = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType  = const int`"
+                    },
+                    {
+                        "value": "`paramType  = const int&`"
+                    },
+                    {
+                        "value": "`paramType  = int&`"
+                    },
+                    {
+                        "value": "`paramType  = int`"
+                    },
+                    {
+                        "value": "`paramType = int&&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(const T& param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int& crx = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(crx)",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`T = int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const int&`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(crx)`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`paramType = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType  = const int`"
+                    },
+                    {
+                        "value": "`paramType = const int&`"
+                    },
+                    {
+                        "value": "`paramType  = int&`"
+                    },
+                    {
+                        "value": "`paramType  = int`"
+                    },
+                    {
+                        "value": "`paramType = int&&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "#4 Deduce the type for the following function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T* param)```\n\nWith the following values:`int x = 42;\nconst int *px = &x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(&x)",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`T = int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const in*`"
+                    },
+                    {
+                        "value": "`T = int*`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(&x)`",
+                "type": "radio",
+                "correctAnswerIndex": 2,
+                "correctAnswer": {
+                    "value": "`paramType = int*`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = const int`"
+                    },
+                    {
+                        "value": "`paramType = const in*`"
+                    },
+                    {
+                        "value": "`paramType = int*`"
+                    },
+                    {
+                        "value": "`paramType = int`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T* param)```\n\nWith the following values:`int x = 42;\nconst int *px = &x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(px)",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`T = const int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const in*`"
+                    },
+                    {
+                        "value": "`T = int*`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(px)`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`paramType = const in*`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = const int`"
+                    },
+                    {
+                        "value": "`paramType = const in*`"
+                    },
+                    {
+                        "value": "`paramType = int*`"
+                    },
+                    {
+                        "value": "`paramType = int`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "#5 Deduce the type for the following function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int crx& = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(x)",
+                "type": "radio",
+                "correctAnswerIndex": 4,
+                "correctAnswer": {
+                    "value": "`T = int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const in*`"
+                    },
+                    {
+                        "value": "`T = int*`"
+                    },
+                    {
+                        "value": "`T = int&&`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(x)`",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`paramType  = int`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType  = const int`"
+                    },
+                    {
+                        "value": "`paramType  = const int&`"
+                    },
+                    {
+                        "value": "`paramType  = int&`"
+                    },
+                    {
+                        "value": "`paramType  = int`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int crx& = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(cx)",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`T = int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const int&`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int&&`"
+                    },
+                    {
+                        "value": "`T = const&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(cx)`",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`paramType = int`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = const int`"
+                    },
+                    {
+                        "value": "`paramType = const innt&`"
+                    },
+                    {
+                        "value": "`paramType = int&`"
+                    },
+                    {
+                        "value": "`paramType = int`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Function",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T param)```\n\nWith the following values:`int x = 42;\nconst int cx = x;\nconst int crx& = x;`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(crx)",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`T = int`"
+                },
+                "options": [
+                    {
+                        "value": "`T = const int`"
+                    },
+                    {
+                        "value": "`T = const int&`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int&&`"
+                    },
+                    {
+                        "value": "`T = const&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(crx)`",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`paramType = int`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = const int`"
+                    },
+                    {
+                        "value": "`paramType = const innt&`"
+                    },
+                    {
+                        "value": "`paramType = int&`"
+                    },
+                    {
+                        "value": "`paramType = int`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "#6 What about Arrays?",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T param)```\n\nWith the following value:`int array[3]{1,2,3};\n`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(array)",
+                "type": "radio",
+                "correctAnswerIndex": 2,
+                "correctAnswer": {
+                    "value": "`T = int*`"
+                },
+                "options": [
+                    {
+                        "value": "`T = int[]`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    },
+                    {
+                        "value": "`T = int*`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int (&)[3]`"
+                    },
+                    {
+                        "value": "`T = int[3]`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(array)`",
+                "type": "radio",
+                "correctAnswerIndex": 2,
+                "correctAnswer": {
+                    "value": "`paramType = int*`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = int[]`"
+                    },
+                    {
+                        "value": "`paramType = int&`"
+                    },
+                    {
+                        "value": "`paramType = int*`"
+                    },
+                    {
+                        "value": "`paramType = int`"
+                    },
+                    {
+                        "value": "`paramType = int (&)[3]`"
+                    },
+                    {
+                        "value": "`paramType = int[3]`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Arrays by reference?",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T& param)```\n\nWith the following value:`int array[3]{1,2,3};\n`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(array)",
+                "type": "radio",
+                "correctAnswerIndex": 5,
+                "correctAnswer": {
+                    "value": "`T = int[3]`"
+                },
+                "options": [
+                    {
+                        "value": "`T = int[]`"
+                    },
+                    {
+                        "value": "`T = int&`"
+                    },
+                    {
+                        "value": "`T = int*`"
+                    },
+                    {
+                        "value": "`T = int`"
+                    },
+                    {
+                        "value": "`T = int (&)[3]`"
+                    },
+                    {
+                        "value": "`T = int[3]`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(cx)`",
+                "type": "radio",
+                "correctAnswerIndex": 4,
+                "correctAnswer": {
+                    "value": "`paramType = int (&)[3]`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = int[]`"
+                    },
+                    {
+                        "value": "`paramType = int&`"
+                    },
+                    {
+                        "value": "`paramType = int*`"
+                    },
+                    {
+                        "value": "`paramType = int`"
+                    },
+                    {
+                        "value": "`paramType = int (&)[3]`"
+                    },
+                    {
+                        "value": "`paramType = int[3]`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "#7 What about Function Pointers?",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T param)```\n\nWith the following value:`void function(int,double);\n`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(function)",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`T = void (*)(int, double)`"
+                },
+                "options": [
+                    {
+                        "value": "`T = void (*)(int, double)`"
+                    },
+                    {
+                        "value": "`T = std::function<int,double>`"
+                    },
+                    {
+                        "value": "`T = void (&)(int,double)`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(function)`",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`paramType = void (*)(int, double)`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = void (*)(int, double)`"
+                    },
+                    {
+                        "value": "`paramType = std::function<int,double>`"
+                    },
+                    {
+                        "value": "`paramType = void (&)(int,double)`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "What about Function Pointers passed by reference?",
+        "description": "```template&lt;typename T&gt;\nvoid functionName(T& param)```\n\nWith the following value:`void function(int,double);\n`",
+        "questions": [
+            {
+                "title": "What will be the type of T for functionName(function)",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`T = void (int, double)`"
+                },
+                "options": [
+                    {
+                        "value": "`T = void (int, double)`"
+                    },
+                    {
+                        "value": "`T = void (*)(int, double)`"
+                    },
+                    {
+                        "value": "`T = std::function<int,double>`"
+                    },
+                    {
+                        "value": "`T = void (&)(int,double)`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of  `paramType` for `functionName(function)`",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`paramType = void (&)(int, double)`"
+                },
+                "options": [
+                    {
+                        "value": "`paramType = void (int, double)`"
+                    },
+                    {
+                        "value": "`paramType = void (*)(int, double)`"
+                    },
+                    {
+                        "value": "`paramType = std::function<int,double>`"
+                    },
+                    {
+                        "value": "`paramType = void (&)(int,double)`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "#8 Auto Type Deduction",
+        "description": "The following variables will be used to deduce the type: `int x = 42; const int cx = 42; int& rx = x; const int& rcx =x;`",
+        "questions": [
+            {
+                "title": "What will be the type of `auto` for: `auto i = x;`",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`auto = int`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = int&`"
+                    },
+                    {
+                        "value": "`auto = int&&`"
+                    },
+                    {
+                        "value": "`auto = int*`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto i = cx;`",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`auto = int`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = const int`"
+                    },
+                    {
+                        "value": "`auto = const int&`"
+                    },
+                    {
+                        "value": "`auto = const int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto i = rx;`",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`auto = int`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = int&`"
+                    },
+                    {
+                        "value": "`auto = int*`"
+                    },
+                    {
+                        "value": "`auto = int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto i = crx;`",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`auto = int`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = const int&`"
+                    },
+                    {
+                        "value": "`auto = const int`"
+                    },
+                    {
+                        "value": "`auto = const int&&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Auto Type Deduction - Reference",
+        "description": "The following variables will be used to deduce the type: `int x = 42; const int cx = 42; int& rx = x; const int& rcx =x;`",
+        "questions": [
+            {
+                "title": "What will be the type of `auto` for: `auto& i = x;`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`auto = int&`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = int&`"
+                    },
+                    {
+                        "value": "`auto = int&&`"
+                    },
+                    {
+                        "value": "`auto = int*`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto& i = cx;`",
+                "type": "radio",
+                "correctAnswerIndex": 2,
+                "correctAnswer": {
+                    "value": "`auto = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = const int`"
+                    },
+                    {
+                        "value": "`auto = const int&`"
+                    },
+                    {
+                        "value": "`auto = const int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto& i = rx;`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`auto = int&`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = int&`"
+                    },
+                    {
+                        "value": "`auto = int*`"
+                    },
+                    {
+                        "value": "`auto = int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto& i = crx;`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`auto = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = const int&`"
+                    },
+                    {
+                        "value": "`auto = const int`"
+                    },
+                    {
+                        "value": "`auto = const int&&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Auto Type Deduction - 'RefRef'",
+        "description": "The following variables will be used to deduce the type: `int x = 42; const int cx = 42; int& rx = x; const int& rcx =x;`",
+        "questions": [
+            {
+                "title": "What will be the type of `auto` for: `auto&& i = x;`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`auto = int&`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = int&`"
+                    },
+                    {
+                        "value": "`auto = int&&`"
+                    },
+                    {
+                        "value": "`auto = int*`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto&& i = cx;`",
+                "type": "radio",
+                "correctAnswerIndex": 2,
+                "correctAnswer": {
+                    "value": "`auto = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = const int`"
+                    },
+                    {
+                        "value": "`auto = const int&`"
+                    },
+                    {
+                        "value": "`auto = const int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto&& i = rx;`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`auto = int&`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = int&`"
+                    },
+                    {
+                        "value": "`auto = int*`"
+                    },
+                    {
+                        "value": "`auto = int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto&& i = crx;`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`auto = const int&`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = const int&`"
+                    },
+                    {
+                        "value": "`auto = const int`"
+                    },
+                    {
+                        "value": "`auto = const int&&`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto&& i = 42;`",
+                "type": "radio",
+                "correctAnswerIndex": 2,
+                "correctAnswer": {
+                    "value": "`auto = int&&`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = int&`"
+                    },
+                    {
+                        "value": "`auto = int&&`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Auto Type Deduction - Other Types",
+        "description": "The following values will be used to deduce the type: `int array[3]{1,2,3};\nvoid someFunction(float,double)`",
+        "questions": [
+            {
+                "title": "What will be the type of `auto` for: `auto fn = someFunction;`",
+                "type": "radio",
+                "correctAnswerIndex": 1,
+                "correctAnswer": {
+                    "value": "`auto = void (*)(float,double)`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = std::function<float,double>`"
+                    },
+                    {
+                        "value": "`auto = void (*)(float,double)`"
+                    },
+                    {
+                        "value": "`auto = void (&)(float,double)`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto& fn = someFunction;`",
+                "type": "radio",
+                "correctAnswerIndex": 2,
+                "correctAnswer": {
+                    "value": "`auto = void (&)(float,double)`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = std::function<float,double>`"
+                    },
+                    {
+                        "value": "`auto = void (*)(float,double)`"
+                    },
+                    {
+                        "value": "`auto = void (&)(float,double)`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto a = array;`",
+                "type": "radio",
+                "correctAnswerIndex": 2,
+                "correctAnswer": {
+                    "value": "`auto = int*`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int&`"
+                    },
+                    {
+                        "value": "`auto = int[3]`"
+                    },
+                    {
+                        "value": "`auto = int*`"
+                    },
+                    {
+                        "value": "`auto = int (&)[3]`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto& a = array;`",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`auto = int (&)[3]`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int&`"
+                    },
+                    {
+                        "value": "`auto = int[3]`"
+                    },
+                    {
+                        "value": "`auto = int*`"
+                    },
+                    {
+                        "value": "`auto = int (&)[3]`"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto&& a = array;`",
+                "type": "radio",
+                "correctAnswerIndex": 4,
+                "correctAnswer": {
+                    "value": "`auto = int (&)[3]`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int&`"
+                    },
+                    {
+                        "value": "`auto = int&&`"
+                    },
+                    {
+                        "value": "`auto = int[3]`"
+                    },
+                    {
+                        "value": "`auto = int*`"
+                    },
+                    {
+                        "value": "`auto = int (&)[3]`"
+                    },
+                    {
+                        "value": "`auto = int (&&)[3]`"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Auto Type Deduction - Other Init",
+        "description": "The following questions state their code.",
+        "questions": [
+            {
+                "title": "What will be the type of `auto` for: `auto value = 42;`",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`auto = int`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = long`"
+                    },
+                    {
+                        "value": "`auto = short`"
+                    },
+                    {
+                        "value": "Does not compile."
+                    },
+                    {
+                        "value": "Is UB"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto value(42);`",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`auto = int`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = long`"
+                    },
+                    {
+                        "value": "`auto = short`"
+                    },
+                    {
+                        "value": "Does not compile."
+                    },
+                    {
+                        "value": "Is UB"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto value{42};`",
+                "type": "radio",
+                "correctAnswerIndex": 0,
+                "correctAnswer": {
+                    "value": "`auto = int`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = long`"
+                    },
+                    {
+                        "value": "`auto = std::initializer_list<int>`"
+                    },
+                    {
+                        "value": "Does not compile."
+                    },
+                    {
+                        "value": "Does not compile."
+                    },
+                    {
+                        "value": "Is UB"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto value = {42};`",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`auto = std::initializer_list<int>`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = long`"
+                    },
+                    {
+                        "value": "`auto = short`"
+                    },
+                    {
+                        "value": "`auto = std::initializer_list<int>`"
+                    },
+                    {
+                        "value": "Does not compile."
+                    },
+                    {
+                        "value": "Is UB"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto value = {42,34};`",
+                "type": "radio",
+                "correctAnswerIndex": 3,
+                "correctAnswer": {
+                    "value": "`auto = std::initializer_list<int>`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = long`"
+                    },
+                    {
+                        "value": "`auto = short`"
+                    },
+                    {
+                        "value": "`auto = std::initializer_list<int>`"
+                    },
+                    {
+                        "value": "Does not compile."
+                    },
+                    {
+                        "value": "Is UB"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto value{42,34};`",
+                "type": "radio",
+                "correctAnswerIndex": 4,
+                "correctAnswer": {
+                    "value": "`Does not compile.`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = long`"
+                    },
+                    {
+                        "value": "`auto = short`"
+                    },
+                    {
+                        "value": "`auto = std::initializer_list<int>`"
+                    },
+                    {
+                        "value": "Does not compile."
+                    },
+                    {
+                        "value": "Is UB"
+                    }
+                ]
+            },
+            {
+                "title": "What will be the type of `auto` for: `auto value = {42,1.f};`",
+                "type": "radio",
+                "correctAnswerIndex": 4,
+                "correctAnswer": {
+                    "value": "`Does not compile.`"
+                },
+                "options": [
+                    {
+                        "value": "`auto = int`"
+                    },
+                    {
+                        "value": "`auto = long`"
+                    },
+                    {
+                        "value": "`auto = std::initializer_list<int,float>`"
+                    },
+                    {
+                        "value": "`auto = std::initializer_list<int>`"
+                    },
+                    {
+                        "value": "Does not compile."
+                    },
+                    {
+                        "value": "Is UB"
+                    }
+                ]
+            }
+        ]
+    }
+]
